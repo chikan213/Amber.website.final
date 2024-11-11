@@ -1,0 +1,67 @@
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: Left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "syetem-ui", "cursive";
+  }
+  
+  .header {
+    background-color: #e4763e;
+    color: #fcf7f7;
+    padding: 25px;
+    
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #686868;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 1000;
+    a:visited {color:#ffffff;}
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #3d3d3d;
+  }
+  
+
+  @keyframes change-color{
+    from{background-color: red;}
+    to{background-color: blue;}
+
+  }
+
+  .background {
+    position: absolute; /* 絕對定位 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("ch1.JPG"); /* 小狗和小貓的背景圖 */
+    background-size: cover; /* 背景圖案覆蓋整個區域 */
+    opacity: 0.1; /* 背景透明度 */
+}
+
+
+  .box-animation{
+    animation-name: change-color;
+    animation-duration: 5s;
+  }
