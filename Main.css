@@ -65,3 +65,24 @@
     animation-name: change-color;
     animation-duration: 5s;
   }
+
+  .home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff7105;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 100px; /* Adjust width for circular shape */
+    height: 100px; /* Adjust height for circular shape */
+    border-radius: 50%; /* Make it circular */
+    display: flex; /* Center text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  .home-button:hover {
+    background-color: #555;
+  }

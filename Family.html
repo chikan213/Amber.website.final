@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amber's Family</title>
 <link rel="stylesheet" href="Main.css">
 <style>
 html {
@@ -11,8 +12,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-
 
 .column {
   float: left;
@@ -30,6 +29,11 @@ html {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -61,23 +65,28 @@ html {
 .button:hover {
   background-color: #555;
 }
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 </style>
 </head>
 <body>
-    <Div class="header">
+<header class="header">
     <h2>Meet Amber's Family</h2>
-    </Div>
-    
-<br>
+</header>
 
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="s1.jpg" alt="Mr.Choi" style="width:75%">
+      <img src="s1.jpg" alt="Mr.Choi" style="width:100%; height:auto;">
       <div class="container">
         <h2>Carson Liu</h2>
         <p class="title">Police</p>
-        <p>Failure is the mother of successful</p>
+        <p>Failure is the mother of success</p>
         <p>choi19870625@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
@@ -86,21 +95,19 @@ html {
 
   <div class="column">
     <div class="card">
-      <img src="s2.jpg" alt="Ms.Gigi" style="width:75%">
+      <img src="s2.jpg" alt="Ms.Gigi" style="width:100%; height:auto;">
       <div class="container">
         <h2>Gigi Chau</h2>
         <p class="title">Nurse</p>
-        <p>Spend your life in your way</p>
+        <p>Spend your life your way</p>
         <p>wingchi0203@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
-  
-  
-    </div>
-  </div>
 </div>
+
+<a href="index.html" class="home-button">Home</a> 
 
 </body>
 </html>
