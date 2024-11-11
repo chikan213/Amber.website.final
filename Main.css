@@ -70,19 +70,31 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #ff7105;
+    background: linear-gradient(145deg, #ff7105, #c75d04); /* 漸變效果 */
     color: rgb(255, 255, 255);
     border: none;
-    width: 100px; /* Adjust width for circular shape */
-    height: 100px; /* Adjust height for circular shape */
-    border-radius: 50%; /* Make it circular */
-    display: flex; /* Center text */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    font-size: 16px; /* Adjust font size */
-  }
-  
-  .home-button:hover {
-    background-color: #555;
-  }
+    font-size: 16px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
+                -5px -5px 15px rgba(255, 255, 255, 0.2); /* 立體陰影 */
+    transition: background-color 0.3s ease, transform 0.2s; /* 平滑過渡 */
+}
+
+.home-button:hover {
+    background: linear-gradient(145deg, #c75d04, #ff7105); /* 反轉漸變 */
+    transform: translateY(-3px); /* 略微上升效果 */
+}
+
+@media (max-width: 600px) {
+    .home-button {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+}
